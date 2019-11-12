@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:textSize="18sp"
+
+        android:text="@string/titestudiante"
+
+        android:textStyle="bold"/>
+
+    <EditText
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:hint="@string/ident"
+
+        android:id="@+id/txtIdent"
+
+        android:inputType="number"/>
+
+    <EditText
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:hint="@string/nombre"
+
+        android:id="@+id/txtNombre"
+
+        android:inputType="text"/>
+
+    <EditText
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:hint="@string/curso"
+
+        android:id="@+id/txtCurso"
+
+        android:inputType="text"/>
+
+    <TableLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <TableRow
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <EditText
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:hint="@string/nota1"
+
+                android:id="@+id/txtNota1"
+
+                android:inputType="number"/>
+
+            <EditText
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:hint="@string/nota2"
+
+                android:id="@+id/txtNota2"
+
+                android:inputType="number"/>
+
+            <EditText
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:hint="@string/nota3"
+
+                android:id="@+id/txtNota3"
+
+                android:inputType="number"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <TableRow
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <Button
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:text="@string/guardar"
+
+                android:id="@+id/btnGuardar"
+
+                android:onClick="metodo"/>
+
+            <Button
+                android:id="@+id/btn_do"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Consultar"
+                />
+
+            <Button
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:text="@string/modificar"
+
+                android:id="@+id/btnModificar"
+
+                android:onClick="modificar"/>
+
+
+            <Button
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:text="@string/eliminar"
+
+                android:id="@+id/btnEliminar"
+
+                android:onClick="eliminardatos"/>
+
+
+
+
+
+
+        </TableRow>
+
+        <Button
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:text="@string/borracampos"
+
+            android:id="@+id/btnlimpiarCam"
+
+            android:onClick="metodoCons"/>
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:id="@+id/resultado"/>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="22sp"
+        android:fontFamily="sans-serif-condensed"
+        />
+
+</LinearLayout>
